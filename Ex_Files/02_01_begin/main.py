@@ -1,4 +1,5 @@
-RUN_INDENTED = False
+RUN_INDENTED = True 
+#change ^^ to False/True
 
 message = "running unindented"
 
@@ -11,3 +12,6 @@ print(message)
 def my_function():
     greet = "Hello"
     return greet
+
+print(my_function())
+#added ^^^
