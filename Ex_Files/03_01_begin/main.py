@@ -12,9 +12,9 @@ EINSTEIN = {
     "motivation": "for his services to Theoretical Physics...",
 }
 
-with open("laureates.csv", "r") as f:
+with open("laureates.csv", "r") as f: #with doesn't leave the file open
     reader = csv.DictReader(f)
-    laureates = list(reader)
+    laureates = list(reader) #list that will stay in memory after traversed
 
 for laureate in laureates:
     if laureate["surname"] == "Einstein":

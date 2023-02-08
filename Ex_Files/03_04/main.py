@@ -22,12 +22,16 @@ with open("laureates.csv", "r") as f:
 
 
 # 1. you can access parts of strings the same way you do lists
-#      hey[2] == "y"
+#      hey[2] == "y"  --> look up third character with y
 # 2. You can add to a list using
 #      my_list.append("something")
 
-laureates_beginning_with_a = []
+laureates_beginning_with_a = [] #empty list
 # LinkedIn learner code here
+
+for laureate in laureates:
+    if laureate["name"][0] == "A":
+        laureates_beginning_with_a.append(laureate)
 
 
 with open("laureates.json", "w") as f:
